@@ -149,7 +149,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/HomeIv"
+            android:id="@+id/HomeIvp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
@@ -157,7 +157,7 @@
             android:src="@drawable/ic_baseline_home_24"/>
 
         <ImageView
-            android:id="@+id/ProfileIv"
+            android:id="@+id/ProfileIvp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
@@ -165,14 +165,14 @@
             android:src="@drawable/ic_baseline_profile_24"/>
 
         <ImageView
-            android:id="@+id/LeavesIv"
+            android:id="@+id/LeavesIvp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_leaves_24"/>
 
         <ImageView
-            android:id="@+id/ConversationIv"
+            android:id="@+id/ConversationIvp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
