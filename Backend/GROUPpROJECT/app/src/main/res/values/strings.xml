@@ -3,7 +3,7 @@
     <string name="email">email address</string>
     <string name="password">password</string>
     <string name="login">login</string>
-    <string name="dont_have_account_signup">signup?</string>
+    <string name="dont_have_account_signup">signup</string>
     <string name="want_to_login">login?</string>
     <string name="leaves">LEAVES</string>
     <string name="apply">APPLY</string>

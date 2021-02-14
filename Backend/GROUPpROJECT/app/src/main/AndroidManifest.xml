@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.groupproject">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,12 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPpROJECT">
-        <activity android:name=".Policies"></activity>
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".Policies" />
         <activity android:name=".Leaves" />
         <activity android:name=".SingnUp" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Splashscreen1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
