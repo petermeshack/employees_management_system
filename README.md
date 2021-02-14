@@ -20,7 +20,7 @@
             <img alt="Home 4" src="docs/wireframes/main_home.PNG">
         </td>
 		<td>		    
-            <img alt="Leaves 5" src="docs/wireframes/leaves.png">
+            <img alt="Leaves 5" src="docs/wireframes/leaves.PNG">
         </td>
 		<td>		    
             <img alt="Policy document 6" src="docs/wireframes/policydocument.PNG">
