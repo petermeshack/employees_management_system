@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Policies"
+    android:background="@drawable/image3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/PolicyDocumenttxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:text="@string/policydocument"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/UserNametxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:text="Policy name"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/Atachmenttxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:text="@string/atachment"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/DateUploadtxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:text="@string/date_upload"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Attandance_and_time_offtxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:text="@string/attandance_and_time_off"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/HarassmentInfotxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/prevention_of_sexual_harassment"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/CompetitonInfotxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/competiton_and_benefits"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/PerfomanceInfotxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/performance_and_goals"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ReimbersementInfotxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/reimbersement_policy"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/ITnAssetsInfotxt"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/it_and_assets_policy"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/HomeIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:isScrollContainer="false"
+            android:src="@drawable/ic_baseline_home_24"/>
+
+        <ImageView
+            android:id="@+id/ProfileIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@color/primaryApp"
+            android:src="@drawable/ic_baseline_profile_24"/>
+
+        <ImageView
+            android:id="@+id/LeavesIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_leaves_24"/>
+
+        <ImageView
+            android:id="@+id/ConversationIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_conversation_24"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
