@@ -8,22 +8,22 @@
 <table>
     <tr>
         <td>
-            <img alt="Splashscreen 1" src="docs/wireframes/splashscreen.png">
+            <img alt="Splashscreen 1" src="docs/wireframes/splashscreen.PNG">
         </td>
         <td>
-            <img alt="Login 2" src="docs/wireframes/login.png">
+            <img alt="Login 2" src="docs/wireframes/login.PNG">
         </td>
 		<td>
-            <img alt="Signup 3" src="docs/wireframes/signup.png">
+            <img alt="Signup 3" src="docs/wireframes/signup.PNG">
         </td>
         <td>		    
-            <img alt="Home 4" src="docs/wireframes/main_home.png">
+            <img alt="Home 4" src="docs/wireframes/main_home.PNG">
         </td>
 		<td>		    
-            <img alt="Leaves 5" src="docs/wireframes/leaves.png">
+            <img alt="Leaves 5" src="docs/wireframes/leaves.PNG">
         </td>
 		<td>		    
-            <img alt="Policy document 6" src="docs/wireframes/policydocument.png">
+            <img alt="Policy document 6" src="docs/wireframes/policydocument.PNG">
         </td>
     </tr>
 </table>
