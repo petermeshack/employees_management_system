@@ -32,7 +32,7 @@
 <p><b>this will be removed by time</b></p>
 <h1>IF WE DONT COMMUNICATE AND COOPARATE THEN WE WILL NOT GET TO OUR GOALS</h1>
 <h4>what is missing</h4>
-<p>more wireframes are nneded to accomplish <b>Policy document</b>, <b>Leaves</b>and  <b>Home</b></p>
+<p>more wireframes are nneded to accomplish <b>Policy document</b>, <b>Leaves</b> and  <b>Home</b></p>
 
 <h2>ALL UI ACTIVITIES ARE TO BE LEFT FOR PETER MESHACK</h2>
 <p>only after a proper wireframes are presented</p>
