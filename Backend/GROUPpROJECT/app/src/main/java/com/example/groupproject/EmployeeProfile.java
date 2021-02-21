@@ -9,23 +9,19 @@ import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class EmployeeProfile extends AppCompatActivity {
     ImageView toHome, toProfile, toLeaves, toPolicies, toLogout;
     private FirebaseAuth mAuth;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mAuth = FirebaseAuth.getInstance();
+        setContentView(R.layout.activity_employee_profile);
 
-        toHome = findViewById(R.id.HomeIv);
-        toProfile = findViewById(R.id.ProfileIv);
-        toLeaves = findViewById(R.id.LeavesIv);
-        toPolicies = findViewById(R.id.PoliciesIv);
-        toLogout = findViewById(R.id.LogoutIv);
-
+        toHome = findViewById(R.id.pHomeIv);
+        toProfile = findViewById(R.id.pProfileIv);
+        toLeaves = findViewById(R.id.pLeavesIv);
+        toPolicies = findViewById(R.id.pPoliciesIv);
 
         toHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,14 +51,5 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-        toLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(), Splashscreen1.class));
-                finish();
-            }
-        });
     }
-    }
+}

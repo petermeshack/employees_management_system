@@ -161,7 +161,6 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
-            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_profile_24"/>
 
         <ImageView
@@ -172,10 +171,11 @@
             android:src="@drawable/ic_baseline_leaves_24"/>
 
         <ImageView
-            android:id="@+id/ConversationIvp"
+            android:id="@+id/PoliciesIvIvp"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
+            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_conversation_24"/>
 
     </LinearLayout>
