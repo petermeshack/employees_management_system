@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_employee_profile">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/iRegisterEmployee"
+            android:icon="@drawable/ic_baseline_register_24"
+            android:title="@string/register_employees" />
+
+        <item
+            android:id="@+id/iDepartment"
+            android:icon="@drawable/ic_baseline_department_24"
+            android:title="@string/departments" />
+
+        <item
+            android:id="@+id/pLeaveStatus"
+            android:icon="@drawable/ic_baseline_leave_status_24"
+            android:title="@string/leave_status" />
+
+        <item
+            android:id="@+id/iLeaveHolydays"
+            android:icon="@drawable/ic_baseline_holydays_24"
+            android:title="@string/leave_holydays" />
+
+        <item
+            android:id="@+id/iTermination"
+            android:icon="@drawable/ic_baseline_termination_24"
+            android:title="@string/termination2" />
+
+        <item
+            android:id="@+id/iPromotion"
+            android:icon="@drawable/ic_baseline_arrow_promotion_24"
+            android:title="@string/promotion" />
+
+        <item
+            android:id="@+id/iDuties"
+            android:icon="@drawable/ic_baseline_duties_24"
+            android:title="@string/duties" />
+
+        <item
+            android:id="@+id/iSearch"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="@string/search" />
+
+        <item
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="@string/info">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_baseline_conversation_24"
+                    android:title="@string/info" />
+                <item
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="@string/share" />
+            </menu>
+        </item>
+    </group>
+</menu>

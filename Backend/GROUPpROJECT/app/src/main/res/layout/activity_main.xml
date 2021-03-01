@@ -18,12 +18,12 @@
 
         <ImageView
             android:id="@+id/PersonImageIv"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
             android:layout_weight="0.5"
             android:isScrollContainer="false"
-            android:layout_marginLeft="170dp"
-            android:src="@drawable/ic_baseline_home_24"/>
+            android:src="@drawable/ic_baseline_profile_24"/>
 
         <TextView
             android:id="@+id/UserNametxt"
@@ -61,7 +61,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="260dp"
+
         android:orientation="vertical">
 
 
@@ -156,6 +157,8 @@
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:isScrollContainer="false"
+            android:background="@color/primaryApp"
+
             android:src="@drawable/ic_baseline_home_24"/>
 
         <ImageView
@@ -163,7 +166,6 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
-            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_profile_24"/>
 
         <ImageView
@@ -174,11 +176,24 @@
             android:src="@drawable/ic_baseline_leaves_24"/>
 
         <ImageView
-            android:id="@+id/ConversationIv"
+            android:id="@+id/DepatrmentIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_department_24"/>
+        <ImageView
+            android:id="@+id/PoliciesIv"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_conversation_24"/>
+
+        <ImageView
+            android:id="@+id/LogoutIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_logout_24"/>
 
     </LinearLayout>
 
