@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeRegistration"
+    android:background="@drawable/image3">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/ProfileTitle"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="@string/register_employee"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RFullnamestxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/fullnames"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RContactstxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/contacts"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RDepartmenttxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/department"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RJobtitiletxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/job_title"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/REducationlevaltxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/education_leval"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RAgetxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/age"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RNationalitytxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/nationality"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RStartdatetxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="@string/start_date"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/RLeavelefttxt"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:autofillHints=""
+                android:hint="Leave left"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/background_dark" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerEmployeesview"
+            android:text="@string/register"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
