@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
-    android:background="@drawable/image3">
+    android:background="@color/white">
 
 
 
@@ -16,44 +16,15 @@
         android:layout_marginTop="50dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/PersonImageIv"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_gravity="top"
-            android:layout_weight="0.5"
-            android:isScrollContainer="false"
-            android:src="@drawable/ic_baseline_profile_24"/>
-
         <TextView
             android:id="@+id/UserNametxt"
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:textAlignment="center"
             android:text="@string/user_name"
-            android:textColor="@color/black"
-            android:textSize="24sp"/>
-
-        <TextView
-            android:id="@+id/Occupationtxt"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.5"
             android:textAlignment="center"
-            android:text="@string/occupation"
             android:textColor="@color/black"
-            android:textSize="24sp"/>
-
-        <TextView
-            android:id="@+id/CompanyNametxt"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_weight="0.5"
-            android:textAlignment="center"
-            android:text="@string/company_name"
-            android:textColor="@color/black"
-            android:textSize="24sp"/>
+            android:textSize="24sp" />
 
 
     </LinearLayout>

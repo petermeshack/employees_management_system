@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:background="@color/whitetintedApp"
-            android:text="SIGN IN"
+            android:text="SIGN UP"
             android:textColor="@android:color/black" />
 
     </LinearLayout>

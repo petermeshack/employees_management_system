@@ -11,10 +11,10 @@
     <string name="leave_status">Leave Status</string>
     <string name="leave_status2">LEAVE STATUS</string>
     <string name="leave_holyday">Leave Holyday</string>
-    <string name="user_name">User Name</string>
+    <string name="user_name">Employee Management Page</string>
     <string name="occupation">Occupation</string>
     <string name="company_name">Company Name</string>
-    <string name="basic_information"><![CDATA[Basic information >]]></string>
+    <string name="basic_information"><![CDATA[New Employee >]]></string>
     <string name="see_employees_details">See employees details</string>
     <string name="allocation_duty"><![CDATA[Allocation duty >]]></string>
     <string name="see_details_here">see details here</string>

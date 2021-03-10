@@ -21,16 +21,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/white">
 
 
             <EditText
                 android:id="@+id/loginEmail"
                 android:layout_width="240dp"
-                android:layout_height="40dp"
-                android:layout_gravity="bottom"
+                android:layout_height="50dp"
+                android:textAlignment="center"
                 android:layout_marginStart="10dp"
                 android:autofillHints=""
+                android:textSize="25dp"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
@@ -52,14 +54,17 @@
             <EditText
                 android:id="@+id/loginPass"
                 android:layout_width="240dp"
-                android:layout_height="40dp"
-                android:layout_gravity="bottom"
+                android:layout_height="50dp"
                 android:layout_marginStart="10dp"
+                android:textSize="25dp"
                 android:autofillHints=""
                 android:hint="@string/password"
                 android:inputType="textPassword"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textColorHint="@android:color/background_dark" />
+                android:background="@color/white"
+                android:textColorHint="@android:color/background_dark"
+                />
 
         </LinearLayout>
 
