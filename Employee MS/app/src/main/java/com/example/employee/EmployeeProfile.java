@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class EmployeeProfile extends AppCompatActivity {
-    ImageView toHome, toProfile, toLeaves, toPolicies, toDepartment;
+    ImageView toHome, toProfile, toLeaves, toPolicies, toLogout, toDepartments;
     private FirebaseAuth mAuth;
 
     @Override
@@ -18,11 +18,12 @@ public class EmployeeProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_profile);
 
-        toHome = findViewById(R.id.pHomeIv);
-        toProfile = findViewById(R.id.pProfileIv);
-        toLeaves = findViewById(R.id.pLeavesIv);
-        toPolicies = findViewById(R.id.pPoliciesIv);
-        toDepartment = findViewById(R.id.DepatrmentIv);
+        toHome = findViewById(R.id.HomeIv3);
+        toProfile = findViewById(R.id.ProfileIv3);
+        toLeaves = findViewById(R.id.LeavesIv3);
+        toPolicies = findViewById(R.id.PoliciesIv3);
+        toDepartments = findViewById(R.id.DepatrmentIv3);
+        toLogout = findViewById(R.id.LogoutIv3);
 
         toHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,17 +46,26 @@ public class EmployeeProfile extends AppCompatActivity {
                 finish();
             }
         });
-        toDepartment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Leaves.class));
-                finish();
-            }
-        });
         toPolicies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Policies.class));
+                finish();
+            }
+        });
+        toDepartments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Departments.class));
+                finish();
+            }
+        });
+
+        toLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(), Splashscreen1.class));
                 finish();
             }
         });

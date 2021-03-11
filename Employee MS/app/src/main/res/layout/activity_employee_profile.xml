@@ -198,40 +198,47 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/pHomeIv"
+            android:id="@+id/HomeIv3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:isScrollContainer="false"
+            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_home_24"/>
 
         <ImageView
-            android:id="@+id/pProfileIv"
+            android:id="@+id/ProfileIv3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
-            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_profile_24"/>
 
         <ImageView
-            android:id="@+id/pLeavesIv"
+            android:id="@+id/LeavesIv3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_leaves_24"/>
 
         <ImageView
-            android:id="@+id/pDepatrmentIv"
+            android:id="@+id/DepatrmentIv3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_department_24"/>
         <ImageView
-            android:id="@+id/pPoliciesIv"
+            android:id="@+id/PoliciesIv3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_conversation_24"/>
-    </LinearLayout>
 
+        <ImageView
+            android:id="@+id/LogoutIv3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_logout_24"/>
+
+    </LinearLayout>
 </RelativeLayout>

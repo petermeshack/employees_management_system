@@ -15,8 +15,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Policies extends AppCompatActivity {
-    ImageView toHomep, toProfilep, toLeavesp, toPolicies;
+    ImageView toHome, toProfile, toLeaves, toPolicies, toLogout, toDepartments;
     TextView Attandance,Prevention,Competiton,Perfomance,Reimbersement,ITAssets;
 
     long queueid;
@@ -34,10 +36,13 @@ public class Policies extends AppCompatActivity {
         Reimbersement = findViewById(R.id.ReimbersementInfotxt);
         ITAssets = findViewById(R.id.ITnAssetsInfotxt);
 
-        toHomep = findViewById(R.id.HomeIvp);
-        toProfilep = findViewById(R.id.ProfileIvp);
-        toLeavesp = findViewById(R.id.LeavesIvp);
-        toPolicies = findViewById(R.id.PoliciesIvIvp);
+        toHome = findViewById(R.id.HomeIv6);
+        toProfile = findViewById(R.id.ProfileIv6);
+        toLeaves = findViewById(R.id.LeavesIv6);
+        toPolicies = findViewById(R.id.PoliciesIv6);
+        toDepartments = findViewById(R.id.DepatrmentIv6);
+        toLogout = findViewById(R.id.LogoutIv6);
+
 
         BroadcastReceiver receiver =new BroadcastReceiver() {
             @Override
@@ -163,21 +168,21 @@ public class Policies extends AppCompatActivity {
         });
 
 
-        toHomep.setOnClickListener(new View.OnClickListener() {
+        toHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
             }
         });
-        toProfilep.setOnClickListener(new View.OnClickListener() {
+        toProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), EmployeeProfile.class));
                 finish();
             }
         });
-        toLeavesp.setOnClickListener(new View.OnClickListener() {
+        toLeaves.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Leaves.class));
@@ -191,8 +196,22 @@ public class Policies extends AppCompatActivity {
                 finish();
             }
         });
+        toDepartments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Departments.class));
+                finish();
+            }
+        });
 
+        toLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(), Splashscreen1.class));
+                finish();
+            }
+        });
     }
 
-//
 }

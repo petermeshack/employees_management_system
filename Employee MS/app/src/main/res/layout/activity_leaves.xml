@@ -76,34 +76,47 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/HomeIvl"
+            android:id="@+id/HomeIv5"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:isScrollContainer="false"
+            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_home_24"/>
 
         <ImageView
-            android:id="@+id/ProfileIvl"
+            android:id="@+id/ProfileIv5"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_profile_24"/>
 
         <ImageView
-            android:id="@+id/LeavesIvl"
+            android:id="@+id/LeavesIv5"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
-            android:background="@color/primaryApp"
             android:src="@drawable/ic_baseline_leaves_24"/>
 
         <ImageView
-            android:id="@+id/ConversationIvl"
+            android:id="@+id/DepatrmentIv5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_department_24"/>
+        <ImageView
+            android:id="@+id/PoliciesIv5"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:src="@drawable/ic_baseline_conversation_24"/>
+
+        <ImageView
+            android:id="@+id/LogoutIv5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/ic_baseline_logout_24"/>
 
     </LinearLayout>
 </RelativeLayout>
