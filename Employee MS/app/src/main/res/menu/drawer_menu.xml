@@ -14,16 +14,6 @@
             android:title="@string/departments" />
 
         <item
-            android:id="@+id/pLeaveStatus"
-            android:icon="@drawable/ic_baseline_leave_status_24"
-            android:title="@string/leave_status" />
-
-        <item
-            android:id="@+id/iLeaveHolydays"
-            android:icon="@drawable/ic_baseline_holydays_24"
-            android:title="@string/leave_holydays" />
-
-        <item
             android:id="@+id/iTermination"
             android:icon="@drawable/ic_baseline_termination_24"
             android:title="@string/termination2" />

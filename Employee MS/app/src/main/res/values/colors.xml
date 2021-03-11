@@ -11,4 +11,6 @@
     <color name="darkApp">#bec5b7</color>
     <color name="whitetintedApp">#f1f8e9</color>
     <color name="primaryApp">#76ff03</color>
+    <color name="grey">#bbbbbb</color>
+    <color name="gray">#aaaaa9</color>
 </resources>

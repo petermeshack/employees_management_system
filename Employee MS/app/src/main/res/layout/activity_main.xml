@@ -129,7 +129,6 @@
             android:layout_weight="0.5"
             android:isScrollContainer="false"
             android:background="@color/primaryApp"
-
             android:src="@drawable/ic_baseline_home_24"/>
 
         <ImageView

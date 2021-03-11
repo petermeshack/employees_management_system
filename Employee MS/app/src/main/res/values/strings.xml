@@ -1,72 +1,89 @@
 <resources>
-    <string name="app_name">employee</string>
-    <string name="email">email address</string>
-    <string name="password">password</string>
-    <string name="login">login</string>
-    <string name="dont_have_account_signup">signup</string>
-    <string name="want_to_login">login?</string>
-    <string name="leaves">LEAVES</string>
-    <string name="apply">APPLY</string>
-    <string name="leave_balance">Leave Balance</string>
-    <string name="leave_status">Leave Status</string>
-    <string name="leave_status2">LEAVE STATUS</string>
-    <string name="leave_holyday">Leave Holyday</string>
-    <string name="user_name">Employee Management Page</string>
-    <string name="occupation">Occupation</string>
-    <string name="company_name">Company Name</string>
-    <string name="basic_information"><![CDATA[New Employee >]]></string>
-    <string name="see_employees_details">See employees details</string>
-    <string name="allocation_duty"><![CDATA[Allocation duty >]]></string>
-    <string name="see_details_here">see details here</string>
-    <string name="dependents"><![CDATA[Dependents >]]></string>
-    <string name="register_delete_employee_here">Register / delete employee here</string>
-    <string name="manage_employee"><![CDATA[Manage employee >]]></string>
-    <string name="promote_change_employee_here">Promote / Change employee here</string>
-    <string name="policydocument">Policy Document</string>
-    <string name="atachment">Atachment</string>
-    <string name="date_upload">Date Upload</string>
-    <string name="it_and_assets_policy">IT and Assets policy</string>
-    <string name="reimbersement_policy">Reimbersement policy</string>
-    <string name="performance_and_goals">Performance And Goals</string>
-    <string name="competiton_and_benefits">Competiton and Benefits</string>
-    <string name="prevention_of_sexual_harassment">Prevention of sexual Harassment</string>
-    <string name="attandance_and_time_off">Attandance and time off</string>
-    <string name="signup">signup</string>
-    <string name="fullnames">FullNames</string>
-    <string name="department">Department</string>
-    <string name="education_leval">Education Leval</string>
-    <string name="nationality">Nationality</string>
-    <string name="register_employee">REGISTER EMPLOYEES</string>
-    <string name="start_date">Start Date</string>
-    <string name="register">REGISTER</string>
-    <string name="department_title">DEPARTMENT</string>
     <string name="_1_it">1. IT</string>
     <string name="_2_finance">2. Finance</string>
     <string name="_3_marketing">3. Marketing</string>
     <string name="_4_r_amp_d"><![CDATA[4. R&D]]></string>
+    <string name="app_name">employee</string>
+    <string name="apply">APPLY</string>
+    <string name="allocation_duty"><![CDATA[Allocation duty >]]></string>
+    <string name="atachment">Atachment</string>
+    <string name="attandance_and_time_off">Attandance and time off</string>
     <string name="add">add</string>
-    <string name="remove">remove</string>
-    <string name="employee_names">Employee names</string>
-    <string name="total_leave_holiday">Total Leave Holiday</string>
-    <string name="contacts">Contacts</string>
-    <string name="job_title">Job Title</string>
     <string name="age">Age</string>
-    <string name="used_leave_holiday">Used Leave</string>
+    <string name="basic_information"><![CDATA[New Employee >]]></string>
+    <string name="company_name">Company Name</string>
+    <string name="competiton_and_benefits">Competiton and Benefits</string>
+    <string name="contacts">Contacts</string>
+    <string name="click_download">Click the links below to download:</string>
+    <string name="department_title">DEPARTMENT</string>
+    <string name="duties">Duties</string>
+    <string name="departments">Departments</string>
+    <string name="date_upload">Date Upload</string>
+    <string name="dont_have_account_signup">signup</string>
+    <string name="dependents"><![CDATA[Dependents >]]></string>
+    <string name="department">Department</string>
+    <string name="education_leval">Education Leval</string>
+    <string name="email">email address</string>
+    <string name="employee_names">Employee names</string>
+    <string name="employee">Employee</string>
+    <string name="fullnames">FullNames</string>
+    <string name="it_and_assets_policy">IT and Assets policy</string>
+    <string name="info">INFO</string>
+    <string name="job_title">Job Title</string>
+    <string name="login">login</string>
+    <string name="leaves">LEAVES</string>
+    <string name="leave_balance">Leave Balance</string>
+    <string name="leaves_given">The leaves that are given are the following:</string>
+    <string name="leave_sick">
+        <b>Sick leave</b>- This is leave that is issued to the employees when they are sick.
+        If they do not produce documents to show they are sick, it is deducted from annual leave.
+    </string>
+    <string name="leave_educational">
+        <b>Educational leave</b>- Leave given to employees who want to further their studies.
+    </string>
+    <string name="leave_unpaid">
+        <b>Unpaid leave</b>- leave that the employee is unpaid and is upon the employee
+        request or the extra days after the annual leave
+    </string>
+    <string name="leave_annual">
+        <b>Annual leave</b>- Every employee is entitled to an annual 30days leave.
+        The leave should not exceed 15 continuous days.
+    </string>
+    <string name="leave_maternity">
+        <b>Maternity leave</b>- Leave that is ONLY issued to the pregnant women
+        or women that have recently delivered.
+    </string>
+    <string name="manage_employee"><![CDATA[Manage employee >]]></string>
+    <string name="nationality">Nationality</string>
+    <string name="occupation">Occupation</string>
     <string name="others">Others</string>
+    <string name="promotion">Promotion</string>
+    <string name="password">password</string>
+    <string name="promote_change_employee_here">Promote / Change employee here</string>
+    <string name="policydocument">Policy Documents</string>
+    <string name="performance_and_goals">Performance And Goals</string>
+    <string name="prevention_of_sexual_harassment">Sexual Harassment Prevention</string>
+    <string name="register_delete_employee_here">Register / delete employee here</string>
+    <string name="reimbursement">Reimbursement policy</string>
+    <string name="register_employee">REGISTER EMPLOYEES</string>
+    <string name="register">REGISTER</string>
+    <string name="remove">remove</string>
+    <string name="register_employees">Register Employees</string>
+    <string name="see_employees_details">See employees details</string>
+    <string name="signup">signup</string>
+    <string name="see_details_here">see details here</string>
+    <string name="start_date">Start Date</string>
     <string name="submit">SUBMIT</string>
-    <string name="leave_holidays">LEAVE HOLIDAYS</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="share">share</string>
     <string name="termination_date">Termination Date</string>
     <string name="terminate">TERMINATE</string>
     <string name="termination">TERMINATION</string>
     <string name="termination2">Termination</string>
     <string name="title">Title</string>
-    <string name="save">Save</string>
-    <string name="duties">Duties</string>
-    <string name="search">Search</string>
-    <string name="promotion">Promotion</string>
-    <string name="leave_holydays">Leave Holydays</string>
-    <string name="departments">Departments</string>
-    <string name="register_employees">Register Employees</string>
-    <string name="info">INFO</string>
-    <string name="share">share</string>
+    <string name="total_leave_holiday">Total Leave Holiday</string>
+    <string name="user_name">Employee Management Page</string>
+    <string name="used_leave_holiday">Used Leave</string>
+    <string name="want_to_login">login?</string>
 </resources>

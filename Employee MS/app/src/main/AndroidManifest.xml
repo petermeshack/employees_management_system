@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.employee">
         <activity android:name=".Promotion"></activity>
-        <activity android:name=".Search" />
         <activity android:name=".Duties" />
         <activity android:name=".Epromotion" />
         <activity android:name=".Termination" />
