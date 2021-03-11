@@ -13,7 +13,6 @@
         android:theme="@style/Theme.employee">
         <activity android:name=".Promotion"></activity>
         <activity android:name=".Duties" />
-        <activity android:name=".Epromotion" />
         <activity android:name=".Termination" />
         <activity android:name=".LeaveHolidays" />
         <activity android:name=".LeaveStatus" />
