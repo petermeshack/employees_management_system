@@ -38,12 +38,12 @@
 
 
         <TextView
-            android:id="@+id/BasicInfotxt"
+            android:id="@+id/NewEmployee"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_weight="0.5"
             android:layout_marginStart="10dp"
-            android:text="@string/basic_information"
+            android:text="@string/create_employee"
             android:textColor="@color/purple_700"
             android:textSize="20sp"/>
 
@@ -58,7 +58,7 @@
 
 
         <TextView
-            android:id="@+id/AllocationInfotxt"
+            android:id="@+id/DutyAllocation"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_weight="0.5"
@@ -72,17 +72,17 @@
             android:layout_height="25dp"
             android:layout_weight="0.5"
             android:layout_marginStart="30dp"
-            android:text="@string/see_details_here"
+            android:text="@string/allocate_duties"
             android:textColor="@color/black"
             android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/DependentsInfotxt"
+            android:id="@+id/EmployeeRank"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_weight="0.5"
             android:layout_marginStart="10dp"
-            android:text="@string/dependents"
+            android:text="@string/promote_employee"
             android:textColor="@color/purple_700"
             android:textSize="20sp"/>
 
@@ -91,17 +91,17 @@
             android:layout_height="25dp"
             android:layout_weight="0.5"
             android:layout_marginStart="30dp"
-            android:text="@string/register_delete_employee_here"
+            android:text="@string/promote_demote_employees"
             android:textColor="@color/black"
             android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/ManageEMPInfotxt"
+            android:id="@+id/ViewEmployee"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_weight="0.5"
             android:layout_marginStart="10dp"
-            android:text="@string/manage_employee"
+            android:text="@string/view_employee"
             android:textColor="@color/purple_700"
             android:textSize="20sp"/>
 

@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
     ImageView toHome, toProfile, toLeaves, toPolicies, toLogout, toDepartments;
     private FirebaseAuth mAuth;
-    TextView BasicInfo, AllocateDuty, DepartmentM, ManageEmployee;
+    TextView NewEmployee, DutyAllocation, EmployeeRank, ViewEmployee;
 
 
 
@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
 
-        BasicInfo = findViewById(R.id.BasicInfotxt);
-        AllocateDuty =findViewById(R.id.AllocationInfotxt);
-        DepartmentM = findViewById(R.id.DependentsInfotxt);
-        ManageEmployee = findViewById(R.id.ManageEMPInfotxt);
+        NewEmployee = findViewById(R.id.NewEmployee);
+        DutyAllocation =findViewById(R.id.DutyAllocation);
+        EmployeeRank = findViewById(R.id.EmployeeRank);
+        ViewEmployee = findViewById(R.id.ViewEmployee);
 
         toHome = findViewById(R.id.HomeIv);
         toProfile = findViewById(R.id.ProfileIv);
@@ -37,23 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        BasicInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), EmployeeProfile.class));
-                finish();
-            }
-        });
-
-        AllocateDuty.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Duties.class));
-                finish();
-            }
-        });
-
-        ManageEmployee.setOnClickListener(new View.OnClickListener() {
+        NewEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), EmployeeRegistration.class));
@@ -61,10 +45,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        AllocateDuty.setOnClickListener(new View.OnClickListener() {
+        DutyAllocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Duties.class));
+                finish();
+            }
+        });
+
+        EmployeeRank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Promotion.class));
+                finish();
+            }
+        });
+
+        ViewEmployee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), EmployeeProfile.class));
                 finish();
             }
         });

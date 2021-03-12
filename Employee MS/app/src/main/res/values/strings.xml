@@ -5,12 +5,12 @@
     <string name="_4_r_amp_d"><![CDATA[4. R&D]]></string>
     <string name="app_name">employee</string>
     <string name="apply">APPLY</string>
-    <string name="allocation_duty"><![CDATA[Allocation duty >]]></string>
+    <string name="allocation_duty"><![CDATA[Allocate Duties >]]></string>
     <string name="atachment">Atachment</string>
     <string name="attandance_and_time_off">Attandance and time off</string>
     <string name="add">add</string>
     <string name="age">Age</string>
-    <string name="basic_information"><![CDATA[New Employee >]]></string>
+    <string name="create_employee"><![CDATA[New Employee >]]></string>
     <string name="company_name">Company Name</string>
     <string name="competiton_and_benefits">Competiton and Benefits</string>
     <string name="contacts">Contacts</string>
@@ -20,7 +20,7 @@
     <string name="departments">Departments</string>
     <string name="date_upload">Date Upload</string>
     <string name="dont_have_account_signup">signup</string>
-    <string name="dependents"><![CDATA[Dependents >]]></string>
+    <string name="promote_employee"><![CDATA[Change Employee Rank >]]></string>
     <string name="department">Department</string>
     <string name="education_leval">Education Leval</string>
     <string name="email">email address</string>
@@ -53,17 +53,17 @@
         <b>Maternity leave</b>- Leave that is ONLY issued to the pregnant women
         or women that have recently delivered.
     </string>
-    <string name="manage_employee"><![CDATA[Manage employee >]]></string>
+    <string name="view_employee"><![CDATA[View employees >]]></string>
     <string name="nationality">Nationality</string>
     <string name="occupation">Occupation</string>
     <string name="others">Others</string>
     <string name="promotion">Promotion</string>
     <string name="password">password</string>
-    <string name="promote_change_employee_here">Promote / Change employee here</string>
+    <string name="promote_change_employee_here">Search for specific employees</string>
     <string name="policydocument">Policy Documents</string>
     <string name="performance_and_goals">Performance And Goals</string>
     <string name="prevention_of_sexual_harassment">Sexual Harassment Prevention</string>
-    <string name="register_delete_employee_here">Register / delete employee here</string>
+    <string name="promote_demote_employees">Promote or demote employees</string>
     <string name="reimbursement">Reimbursement policy</string>
     <string name="register_employee">REGISTER EMPLOYEES</string>
     <string name="register">REGISTER</string>
@@ -71,7 +71,7 @@
     <string name="register_employees">Register Employees</string>
     <string name="see_employees_details">See employees details</string>
     <string name="signup">signup</string>
-    <string name="see_details_here">see details here</string>
+    <string name="allocate_duties">Allocate Employee Duties</string>
     <string name="start_date">Start Date</string>
     <string name="submit">SUBMIT</string>
     <string name="save">Save</string>
