@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.employeems">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EmployeeMS">
+        <activity android:name=".LoginActivity"></activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/login"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.employees.ViewEmployees"
+            android:label="@string/emp_view" />
+        <activity
+            android:name=".ui.employees.TerminateEmployees"
+            android:label="@string/emp_terminate" />
+        <activity
+            android:name=".ui.employees.NewEmployees"
+            android:label="@string/emp_new" />
+        <activity
+            android:name=".ui.departments.DepartmentRemove"
+            android:label="@string/dept_remove" />
+        <activity
+            android:name=".ui.departments.DepartmentCreate"
+            android:label="@string/dept_create" />
+        <activity
+            android:name=".ui.departments.DepartmentView"
+            android:label="@string/dept_view" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EmployeeMS.NoActionBar" />
+    </application>
+
+</manifest>
