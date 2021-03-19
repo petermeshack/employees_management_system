@@ -64,7 +64,7 @@
     </string-array>
     <string name="title">Job Title</string>
 
-    <string name="user_mail">User E-mail</string>
+    <string name="user_mail">com.example.employeems.User E-mail</string>
 
     <string name="version">Version: 1.0.0</string>
     <string name="prompt_email">Email</string>
@@ -73,5 +73,17 @@
     <string name="invalid_email">Not a valid Email</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="add_enployees">add enployees</string>
+    <string name="register_employees">REGISTER EMPLOYEES</string>
+    <string name="fullnames">Fullnames</string>
+    <string name="contacts">Contacts</string>
+    <string name="job_title">Job Title</string>
+    <string name="education_leval">Education Leval</string>
+    <string name="age">Age</string>
+    <string name="nationality">Nationality</string>
+    <string name="start_date">Start Date</string>
+    <string name="register">register</string>
+    <string name="leave_left">Leave Left</string>
+    <string name="email">Email</string>
 
 </resources>

@@ -21,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText userEmail, userPassword;
     Button Loginbtn;
+    Button AddEmployeesbtn;
     String email,password;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
@@ -34,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         userEmail = findViewById(R.id.email);
         userPassword = findViewById(R.id.password);
         Loginbtn = findViewById(R.id.loginBtn);
+        AddEmployeesbtn = findViewById(R.id.addEmployyesBtn);
 
 
         Loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +72,13 @@ public class LoginActivity extends AppCompatActivity {
 
                     }
                 }
+            }
+        });
+
+        AddEmployeesbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), AddEmployee.class));
             }
         });
     }
