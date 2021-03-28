@@ -1,89 +1,89 @@
 <resources>
     <string name="app_name">SBEM</string>
-    <string name="nav_header_title">Small Business Management System</string>
-    <string name="nav_header_subtitle">emp2021loyee@Gmail.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SBEM</string>
+    <string name="nav_header_subtitle">User - Owner</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="add">Add</string>
 
-    <string name="contact">Contact</string>
-    <string name="create">Create</string>
-    <string name="create_supervisors">Create log in credentials for Department Head</string>
-
-    <string name="delete">Delete</string>
-    <string name="department">Departments</string>
-    <string name="dept_id">Department ID</string>
-    <string name="dept_name">Department Name</string>
-    <string name="dept_head">Department Head Name</string>
-    <string name="dept_remove">Deactivate Department</string>
-    <string name="dept_create">Create Department</string>
-    <string name="dept_allocate_manager">Allocate Department Head</string>
-    <string name="dept_save">Save Department</string>
-    <string name="dept_save_credentials">Save Department Head Credentials</string>
-    <string name="dept_view">View Departments</string>
-    <string name="dept_status">Department Status</string>
-    <string name="duties">Duties</string>
-
-    <string name="employees">Employees</string>
+    <!-- Employee texts -->
     <string name="emp_id">Employee ID</string>
+    <string name="emp_new">New</string>
+    <string name="new_emp">New Employee</string>
+    <string name="emp_terminate">Terminate</string>
+    <string name="emp_view">View</string>
     <string name="emp_fname">First Name</string>
     <string name="emp_lname">Last Name</string>
-    <string name="emp_email">Employee E-mail</string>
-    <string name="emp_new">New Employees</string>
-    <string name="emp_terminate">Terminate Employee</string>
-    <string name="emp_view">View Employees</string>
-    <string name="emp_termination_date">Termination Date</string>
-    <string name="emp_phoneno">Phone Number</string>
+    <string name="emp_email">E-mail</string>
+    <string name="emp_id_no">Employee ID Number</string>
+    <string name="emp_mobile_no">Mobile Number</string>
+    <string name="emp_position">Employee Position</string>
+    <string name="emp_hire_date">Hire Date</string>
+    <string name="emp_cv">Curriculum Vitae</string>
+    <string name="emp_termination">Terminate Employee</string>
+    <string name="emp_terminate_date">Termination Date</string>
     <string name="emp_salary">Salary</string>
-    <string name="emp_hire_date">Employee Hire Date</string>
-    <string name="emp_save">Save New Employee</string>
-    <string name="emp_termination_confirmation">
-        To confirm termination of employee, ensure correct values for Employee ID,
-        First Name and Last Name.
-    </string>
-    <string name="exit">Exit</string>
+    <string name="emp_save">Save Employee</string>
 
-    <string name="leaves">Leaves</string>
-    <string name="login">Login</string>
-    <string name="log_out">Log out</string>
+    <!-- Department texts -->
+    <string name="activate_dept">Activate or Deactivate Department</string>
+    <string name="create_dept">Create Departments</string>
+    <string name="dept">Departments</string>
+    <string name="dept_id">Department ID</string>
+    <string name="dept_name">Department Name</string>
+    <string name="dept_view">View</string>
+    <string name="dept_create">Create</string>
+    <string name="dept_create_date">Department Creation Date</string>
+    <string name="dept_activate_deactivate">Change State</string>
+    <string name="dept_save">Save</string>
+    <string name="dept_status">Change Status</string>
 
+    <!-- Leave texts -->
+    <string name="grant_revoke_leaves">Grant or Revoke Leaves</string>
+    <string name="current_leaves">Leaves Status</string>
+    <string name="duties_approve_disapprove">Approve or Disapprove</string>
+
+    <!-- Duties texts -->
+    <string name="view_duties">View Duties</string>
+    <string name="duty_name">Duty Name</string>
+    <string name="duty_title">Duty Title</string>
+    <string name="duties">Duties</string>
+    <string name="save_duty">Save Duty</string>
+    <string name="duty_startdate">Duty Start Date</string>
+    <string name="duty_enddate">Expected End Date</string>
+    <string name="allocate_duties">Allocate Duties</string>
+    <string name="allocate_duty">Allocate Duty</string>
+
+    <!-- Menu texts -->
     <string name="menu_home">Home</string>
-
+    <string name="menu_departments">Departments</string>
+    <string name="menu_employees">Employees</string>
+    <string name="menu_employee_role">Employee Role</string>
+    <string name="menu_settings">Settings</string>
     <string name="menu_profile">Profile</string>
+    <string name="menu_share">Share</string>
 
-    <string name="menu_supervisor">Department Head</string>
+    <!-- Supervisor -->
+    <string name="sup_profile">Profile</string>
+    <string name="sup_leaves">Leaves</string>
+    <string name="sup_duties">Duties</string>
 
-    <string name="org_name">Organisation Name</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
 
-    <string name="remove">Remove</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
 
-    <string-array name="status">
-        <item>Activate</item>
-        <item>Deactivate</item>
-    </string-array>
-    <string name="title">Job Title</string>
-
-    <string name="user_mail">com.example.employeems.User E-mail</string>
-
-    <string name="version">Version: 1.0.0</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in</string>
-    <string name="invalid_email">Not a valid Email</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="add_enployees">add enployees</string>
-    <string name="register_employees">REGISTER EMPLOYEES</string>
-    <string name="fullnames">Fullnames</string>
-    <string name="contacts">Contacts</string>
-    <string name="job_title">Job Title</string>
-    <string name="education_leval">Education Leval</string>
-    <string name="age">Age</string>
-    <string name="nationality">Nationality</string>
-    <string name="start_date">Start Date</string>
-    <string name="register">register</string>
-    <string name="leave_left">Leave Left</string>
-    <string name="email">Email</string>
-
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">
+        Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_supervisor">SupervisorActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>

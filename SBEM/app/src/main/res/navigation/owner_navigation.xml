@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.project.sbem.owner.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_owner_home" />
+
+    <fragment
+        android:id="@+id/nav_departments"
+        android:name="com.project.sbem.owner.ui.DepartmentsFragment"
+        android:label="@string/menu_departments"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/nav_employees"
+        android:name="com.project.sbem.owner.ui.EmployeesFragment"
+        android:label="@string/menu_employees"
+        tools:layout="@layout/fragment_departments" />
+
+    <fragment
+        android:id="@+id/nav_employee_role"
+        android:name="com.project.sbem.owner.ui.EmployeeRoleFragment"
+        android:label="@string/menu_employee_role"
+        tools:layout="@layout/fragment_employee_role" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.project.sbem.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_owner_profile" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.project.sbem.SettingsFragment"
+        android:label="SettingsFragment" />
+
+
+</navigation>

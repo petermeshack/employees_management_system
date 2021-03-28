@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "863541824183",
+    "firebase_url": "https://employeems-f4ed1-default-rtdb.firebaseio.com",
     "project_id": "employeems-f4ed1",
     "storage_bucket": "employeems-f4ed1.appspot.com"
   },
@@ -39,6 +40,35 @@
         "mobilesdk_app_id": "1:863541824183:android:8696c07c1020f506b15b32",
         "android_client_info": {
           "package_name": "com.example.employeems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863541824183-21ur5qq40fdeu8nolfa6r0gsue8crfe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeQ7DHwC5agPh28I5Zrqxsp48LrEnpSKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863541824183-21ur5qq40fdeu8nolfa6r0gsue8crfe0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863541824183:android:7c2b0ea2da7a97b5b15b32",
+        "android_client_info": {
+          "package_name": "com.project.sbem"
         }
       },
       "oauth_client": [
