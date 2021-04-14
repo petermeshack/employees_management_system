@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".owner.ui.NewEmployeeActivity">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,9 +25,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:inputType="text"
-            android:textSize="25sp"
+            android:textSize="20dp"
             android:padding="10sp"
+            android:inputType="number"
             android:layout_margin="10sp"
             android:hint="@string/emp_id" />
 
@@ -35,7 +37,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:padding="10sp"
             android:layout_margin="10sp"
             android:textAlignment="center"
@@ -48,7 +50,7 @@
             android:ems="10"
             android:textAlignment="center"
             android:inputType="text"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:padding="10sp"
             android:layout_margin="10sp"
             android:hint="@string/emp_lname" />
@@ -60,7 +62,7 @@
             android:ems="10"
             android:textAlignment="center"
             android:inputType="number"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:padding="10sp"
             android:layout_margin="10sp"
             android:hint="@string/emp_mobile_no" />
@@ -71,11 +73,33 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:padding="10sp"
             android:layout_margin="10sp"
             android:inputType="textWebEmailAddress"
             android:hint="@string/emp_email" />
+
+        <EditText
+            android:id="@+id/emp_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:hint="@string/emp_department" />
+
+        <EditText
+            android:id="@+id/emp_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:padding="10sp"
+            android:layout_margin="10sp"
+            android:hint="@string/emp_role" />
 
         <EditText
             android:id="@+id/emp_salary"
@@ -84,7 +108,7 @@
             android:ems="10"
             android:textAlignment="center"
             android:inputType="number"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:padding="10sp"
             android:layout_margin="10sp"
             android:hint="@string/emp_salary" />
@@ -95,7 +119,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:padding="10sp"
             android:layout_margin="10sp"
             android:hint="@string/emp_hire_date"
@@ -109,6 +133,9 @@
             android:textSize="25sp"
             android:layout_marginTop="20sp"
             android:text="@string/emp_save" />
+
+
     </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,16 +37,6 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/duty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginBottom="10sp"
-            android:hint="@string/duty_name"
-            android:inputType="textMultiLine"
-            android:textAlignment="center" />
-
-        <EditText
             android:id="@+id/duty_startdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,10 +57,11 @@
             android:layout_marginBottom="10sp"/>
 
         <Button
+            android:id="@+id/save_duties"
             android:layout_width="match_parent"
             android:layout_height="50sp"
-            android:textSize="20sp"
-            android:text="@string/save_duty"/>
+            android:text="@string/save_duty"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

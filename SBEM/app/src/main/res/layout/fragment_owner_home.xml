@@ -6,15 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".owner.ui.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ListView
+        android:id="@+id/emp_employeelist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20sp"
-        android:padding="20sp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="Show Employees and the duties allocated to them"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

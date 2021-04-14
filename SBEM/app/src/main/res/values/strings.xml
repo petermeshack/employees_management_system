@@ -92,4 +92,6 @@
     <string name="sign_in">Sign in</string>
     <string name="minimum_password_length">Minimum Password Strength is 8</string>
     <string name="auth_failed">Login Failed. Invalid E-mail or Password!</string>
+    <string name="emp_department">Department</string>
+    <string name="emp_role">Role</string>
 </resources>

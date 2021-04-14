@@ -1,7 +1,14 @@
 package com.project.sbem;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 import com.google.android.material.navigation.NavigationView;
+import com.project.sbem.data.model.DatabaseHelper;
+import com.project.sbem.data.model.EmployeesModel;
+
+import java.util.List;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -32,6 +39,9 @@ public class OwnerActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+
     }
 
     @Override
@@ -40,4 +50,6 @@ public class OwnerActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
 }
