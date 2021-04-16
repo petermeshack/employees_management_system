@@ -36,3 +36,6 @@
 
 <h2>ALL UI ACTIVITIES ARE TO BE LEFT FOR PETER MESHACK</h2>
 <p>only after a proper wireframes are presented</p>
+
+<h2>Cooncern</h2>
+	<p>How comes the app hairun kwa phone natumia. Am asking here ju sina access ya whatsapp</p>
