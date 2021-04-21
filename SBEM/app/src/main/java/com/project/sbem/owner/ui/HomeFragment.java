@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,6 +27,8 @@ import com.project.sbem.data.model.EmployeesModelAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static androidx.core.app.ActivityCompat.recreate;
 
 public class HomeFragment extends Fragment {
     RecyclerView list_all_users;
@@ -62,11 +65,21 @@ public class HomeFragment extends Fragment {
 
         storedata_in_employye_array();
         employeesModelAdapter = new EmployeesModelAdapter(getContext(),work_id, firstname, lastname,mobilenumber,email,salary,hiredate,department,role);
-        list_all_users.setAdapter(employeesModelAdapter);
+        list_all_users.setAdapter(employeesModelAdapter)  ;
         list_all_users.setLayoutManager(new LinearLayoutManager(getContext()));
 
         return root;
     }
+/*
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 1){
+            recreate(getActivity());
+        }
+    }*/
+
+
     void storedata_in_employye_array(){
         Cursor cursor = db.readAllData_employee();
         if(cursor.getCount()== 0){

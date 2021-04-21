@@ -25,13 +25,9 @@ import java.util.ArrayList;
 
 public class DepartmentsFragment extends Fragment {
     RecyclerView list_all_users;
-    FloatingActionButton add_data;
     DatabaseHelper db;
     ArrayList<String> work_D_id, Department_Name, Department_creation_date;
     DepartmentModelAdapter departmentModelAdapter;
-
-
-
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,

@@ -95,4 +95,5 @@
     <string name="emp_department">Department</string>
     <string name="emp_role">Role</string>
     <string name="emp_update_info">UPDATE INFO</string>
+    <string name="emp_terminate_info">TERMINATE</string>
 </resources>

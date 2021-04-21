@@ -38,14 +38,19 @@
             android:layout_margin="10sp"
             android:padding="10sp"/>
 
-        <Spinner
-            android:id="@+id/dept_status_spinner"
+        <EditText
+            android:id="@+id/dept_date"
             android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:prompt="@string/dept_status"
-            android:textAlignment="center" />
+            android:layout_height="wrap_content"
+            android:text="@string/dept_create_date"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_margin="10sp"
+            android:padding="10sp"/>
 
         <Button
+            android:id="@+id/bt_savechanges"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"

@@ -1,6 +1,7 @@
 package com.project.sbem.data.model;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -19,8 +20,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class EmployeesModelAdapter extends RecyclerView.Adapter<EmployeesModelAdapter.MyViewFolder> {
     Context context;
+    Activity activity;
     ArrayList work_id, firstname, lastname,mobilenumber,email,salary,hiredate,department,role;
+   // public EmployeesModelAdapter(Activity activity,Context context, ArrayList work_id, ArrayList firstname, ArrayList lastname, ArrayList mobilenumber, ArrayList email, ArrayList salary, ArrayList hiredate, ArrayList department, ArrayList role) {
     public EmployeesModelAdapter(Context context, ArrayList work_id, ArrayList firstname, ArrayList lastname, ArrayList mobilenumber, ArrayList email, ArrayList salary, ArrayList hiredate, ArrayList department, ArrayList role) {
+        //this.activity = activity;
         this.context = context;
         this.work_id = work_id;
         this.firstname = firstname;
@@ -66,6 +70,7 @@ public class EmployeesModelAdapter extends RecyclerView.Adapter<EmployeesModelAd
                 intent.putExtra("hiredate",String.valueOf(hiredate.get(position)));
                 intent.putExtra("department",String.valueOf(department.get(position)));
                 intent.putExtra("role",String.valueOf(role.get(position)));
+                //activity.startActivityForResult(intent,1);
                 context.startActivities(new Intent[]{intent});
             }
         });

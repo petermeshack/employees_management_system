@@ -1,7 +1,10 @@
 package com.project.sbem;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,12 +19,11 @@ import java.util.ArrayList;
 
 public class UpdateUserInfo extends AppCompatActivity {
     EditText id_emp_update,first_name_update,last_name_update,phone_emp_update,email_emp_update,department_emp_update,role_emp_update, salary_emp_update, hiredate_emp_update;
-    Button btn_update;
+    Button btn_update,btn_terminate;
 
-    EmployeesModel employeesModel;
+
     String id,id_emp_up,first_name_up,last_name_up,phone_emp_up,email_emp_up,department_emp_up,role_emp_up, salary_emp_up, hiredate_emp_up;
-
-
+    DatabaseHelper db = new DatabaseHelper(UpdateUserInfo.this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,12 +39,19 @@ public class UpdateUserInfo extends AppCompatActivity {
         salary_emp_update=findViewById(R.id.update_emp_salary);
         hiredate_emp_update=findViewById(R.id.update_emp_hire_date);
         btn_update = findViewById(R.id.update_employee);
+        btn_terminate = findViewById(R.id.terminate_employee);
 
         getSetIntetdata();
+        ActionBar ab = getSupportActionBar();
+        if (ab != null) {
+            ab.setTitle(id_emp_up);
+        }
+
+
         btn_update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseHelper db = new DatabaseHelper(UpdateUserInfo.this);
+
               try {
                   db.updateData(
                           id_emp_update.getText().toString(),
@@ -60,6 +69,12 @@ public class UpdateUserInfo extends AppCompatActivity {
               }catch (Exception e){
                   Toast.makeText(UpdateUserInfo.this, "Error entering data", Toast.LENGTH_SHORT).show();
               }
+            }
+        });
+        btn_terminate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                confirmDialog();
             }
         });
     }
@@ -97,7 +112,26 @@ public class UpdateUserInfo extends AppCompatActivity {
 
 
         }else{
-            Toast.makeText(this, "nodata", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "no data", Toast.LENGTH_SHORT).show();
         }
+    }
+    void confirmDialog(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Delete"+id_emp_update.getText().toString()+"!");
+        builder.setMessage("Are you sure");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                db.deleteOberowEmployee(id_emp_update.getText().toString());
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builder.create().show();
+
     }
 }
