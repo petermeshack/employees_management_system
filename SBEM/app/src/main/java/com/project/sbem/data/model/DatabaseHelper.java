@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_LEAVES_NAME = "LEAVES_NAME";
     public static final String COLUMN_LEAVES_START_DATE = "LEAVES_START_DATE";
     public static final String COLUMN_LEAVES_END_DATE = "LEAVES_END_DATE";
+    private Context context;
 
 
     public DatabaseHelper(@Nullable Context context) {
@@ -198,6 +200,49 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor;
 
     }
+    /*public void updateData(String row_id, String id_emp_up,String first_name_up,String last_name_up,String phone_emp_up,String email_emp_up,String department_emp_up,String role_emp_up,String salary_emp_up,String hiredate_emp_up){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(COLUMN_WORK_ID, id_emp_up);
+        cv.put(COLUMN_FIRSTNAME, first_name_up);
+        cv.put(COLUMN_LASTNAME, last_name_up);
+        cv.put(COLUMN_MOBILENUMBER, phone_emp_up);
+        cv.put(COLUMN_EMAIL, email_emp_up);
+        cv.put(COLUMN_SALARY, salary_emp_up);
+        cv.put(COLUMN_HIREDATE, hiredate_emp_up);
+        cv.put(COLUMN_DEPARTMENT, department_emp_up);
+        cv.put(COLUMN_ROLE, role_emp_up);
+        long results = db.update(USERS,cv,"ID=?", new String[]{row_id});
+        if(results == -1){
+            //
+        }else{
+            //
+        }
+
+    }*/
+    public void updateData(String id_row,String id_emp_up,String first_name_up,String last_name_up,String phone_emp_up,String email_emp_up,String department_emp_up,String role_emp_up,String salary_emp_up,String hiredate_emp_up){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(COLUMN_WORK_ID, id_emp_up);
+        cv.put(COLUMN_FIRSTNAME, first_name_up);
+        cv.put(COLUMN_LASTNAME, last_name_up);
+        cv.put(COLUMN_MOBILENUMBER, phone_emp_up);
+        cv.put(COLUMN_EMAIL, email_emp_up);
+        cv.put(COLUMN_SALARY, salary_emp_up);
+        cv.put(COLUMN_HIREDATE, hiredate_emp_up);
+        cv.put(COLUMN_DEPARTMENT, department_emp_up);
+        cv.put(COLUMN_ROLE, role_emp_up);
+        long results = db.update(USERS,cv,"WORK_ID=?", new String[]{id_row});
+        if(results == -1){
+            //
+        }else{
+            //
+        }
+
+    }
+
+
 
     public Cursor readAllData_Department(){
         String query = "SELECT * FROM " + DEPARTMENTS;
@@ -232,6 +277,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor;
 
     }
+
 
 
 }

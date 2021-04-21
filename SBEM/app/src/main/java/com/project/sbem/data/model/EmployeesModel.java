@@ -50,6 +50,11 @@ public class EmployeesModel {
         return employeeid;
     }
 
+    public String StringgetEmployeeid() {
+        String employeeids = Integer.toString(employeeid);
+        return employeeids;
+    }
+
     public void setEmployeeid(int employeeid) {
         this.employeeid = employeeid;
     }
