@@ -1,10 +1,10 @@
 package com.project.sbem.data.model;
 
 public class DepartmentModel {
-    int department_id;
-    String work_D_id;
-    String Department_Name;
-    String Department_creation_date;
+        int department_id;
+        String work_D_id;
+        String Department_Name;
+        String Department_creation_date;
 
     public DepartmentModel(int department_id, String work_D_id, String department_Name, String department_creation_date) {
         this.department_id = department_id;

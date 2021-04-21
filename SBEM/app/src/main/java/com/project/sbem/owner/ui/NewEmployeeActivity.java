@@ -3,6 +3,7 @@ package com.project.sbem.owner.ui;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -63,6 +64,7 @@ public class NewEmployeeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EmployeesModel employeesModel;
                 try{
+
                     employeesModel = new EmployeesModel(
                             -1,
                             id_emp.getText().toString(),
@@ -75,18 +77,35 @@ public class NewEmployeeActivity extends AppCompatActivity {
                             department_emp.getText().toString(),
                             role_emp.getText().toString()
                     );
+                    if(id_emp.getText().toString().isEmpty()||
+                            first_name.getText().toString().isEmpty()||
+                            last_name.getText().toString().isEmpty()||
+                            phone_emp.getText().toString().isEmpty()||
+                             email_emp.getText().toString().isEmpty()||
+                            salary_emp.getText().toString().isEmpty()||
+                            hiredate_emp.getText().toString().isEmpty()||
+                            department_emp.getText().toString().isEmpty()||
+                            role_emp.getText().toString().isEmpty()
+                    ){
+                        Toast.makeText(NewEmployeeActivity.this, "Please enter all data", Toast.LENGTH_SHORT).show();
 
+                    }else{
+                    // instance of offline database
+                    DatabaseHelper helper = new DatabaseHelper(NewEmployeeActivity.this);
+                    // helper.addOne(employeesModel);
+                    boolean testsuccess = helper.addOneEmployee(employeesModel);
+                    Toast.makeText(NewEmployeeActivity.this, "Sucess"+testsuccess, Toast.LENGTH_SHORT).show();
                     Toast.makeText(NewEmployeeActivity.this, "info Added", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(NewEmployeeActivity.this, HomeFragment.class);
+                        startActivity(intent);
+                    }
+
                 }catch(Exception e){
                     employeesModel = new EmployeesModel(-1,"work_id", "f_name", "l_name", "0000000000","user@gmail.com", "00000000", "00/00/0000","department","role");
                     Toast.makeText(NewEmployeeActivity.this, "Error entering data", Toast.LENGTH_SHORT).show();
                     System.out.println("Could not parse " + Integer.getInteger(phone_emp.getText().toString()));
                 }
-                // instance of offline database
-                DatabaseHelper helper = new DatabaseHelper(NewEmployeeActivity.this);
-               // helper.addOne(employeesModel);
-                boolean testsuccess = helper.addOneEmployee(employeesModel);
-                Toast.makeText(NewEmployeeActivity.this, "Sucess"+testsuccess, Toast.LENGTH_SHORT).show();
+
 
             }
         });

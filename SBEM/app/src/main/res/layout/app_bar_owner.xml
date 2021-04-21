@@ -19,8 +19,5 @@
             app:popupTheme="@style/Theme.SBEM.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
     <include layout="@layout/content_owner" />
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

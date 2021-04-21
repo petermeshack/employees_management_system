@@ -50,17 +50,6 @@
             android:textAlignment="center"
             android:padding="10sp"/>
 
-        <EditText
-            android:id="@+id/termination_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/emp_terminate_date"
-            android:inputType="date"
-            android:layout_margin="10sp"
-            android:textAlignment="center"
-            android:padding="10sp"/>
-
         <Button
             app:backgroundTint="@null"
             android:id="@+id/terminate_employee"

@@ -7,15 +7,16 @@
     tools:context=".owner.ui.DepartmentsFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="50sp"
-        android:orientation="horizontal"
         android:layout_marginTop="0sp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <!--<Button
             android:id="@+id/dept_view"
             app:backgroundTint="@null"
             android:layout_width="match_parent"
@@ -24,30 +25,46 @@
             android:text="@string/dept_view"
             android:textColor="@color/black"
             android:backgroundTint="@color/white"
-            android:background="@drawable/side_nav_bar"/>
+            android:background="@drawable/side_nav_bar"/>-->
 
         <Button
             android:id="@+id/dept_create"
-            app:backgroundTint="@null"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.2"
+            android:background="@drawable/side_nav_bar"
+            android:backgroundTint="@color/purple_500"
             android:text="@string/dept_create"
             android:textColor="@color/white"
-            android:backgroundTint="@color/purple_500"
-            android:background="@drawable/side_nav_bar"/>
+            app:backgroundTint="@null" />
 
         <Button
             android:id="@+id/dept_activate_deactivate"
-            app:backgroundTint="@null"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/side_nav_bar"
+            android:backgroundTint="@color/purple_500"
             android:text="@string/dept_activate_deactivate"
             android:textColor="@color/white"
-            android:backgroundTint="@color/purple_500"
-            android:background="@drawable/side_nav_bar"/>
+            app:backgroundTint="@null" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/emp_employeelist_department"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="?attr/actionBarSize" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

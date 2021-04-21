@@ -39,8 +39,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_END_DATE = "END_DATE";
 
 
+    public static final String LEAVES = "LEAVES_TABLE";
+    public static final String COLUMN_LEAVES_ID = "ID";
+    public static final String COLUMN_WorkLEAVES_ID = "WorkLEAVE_ID";
+    public static final String COLUMN_LEAVES_NAME = "LEAVES_NAME";
+    public static final String COLUMN_LEAVES_START_DATE = "LEAVES_START_DATE";
+    public static final String COLUMN_LEAVES_END_DATE = "LEAVES_END_DATE";
+
+
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "employees_M.db", null, 1);
+        super(context, "employees_edb.db", null, 1);
     }
 
     // first time you access database object
@@ -72,9 +80,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_START_DATE + " TEXT,"
                 + COLUMN_END_DATE + " TEXT )";
 
+        String Create_table_LEAVES = " CREATE TABLE " + LEAVES + "("
+                + COLUMN_LEAVES_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + COLUMN_WorkLEAVES_ID + " TEXT,"
+                + COLUMN_LEAVES_NAME + " TEXT,"
+                + COLUMN_LEAVES_START_DATE + " TEXT,"
+                + COLUMN_LEAVES_END_DATE + " TEXT )";
+
         db.execSQL(Create_table_Users);
         db.execSQL(Create_table_Departments);
         db.execSQL(Create_table_DUTIES);
+        db.execSQL(Create_table_LEAVES);
     }
     // evrytime db version changes or  you access database object
     @Override
@@ -140,37 +156,82 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    //////QUERIES
+    // ADD LEAVES
+    public boolean addOneLEAVE(LeaveModel leaveModel){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
 
-    public List<EmployeesModel> getAllRecords(){
-        List <EmployeesModel> returnlist = new ArrayList<>();
-        String queryallString = "SELECT * FROM " + USERS;
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(queryallString, null);
-
-        if(cursor.moveToFirst()){
-            do{
-                int employee_id = cursor.getInt(0);
-                String employee_work_id = cursor.getString(1);
-                String employee_firstName = cursor.getString(2);
-                String employee_lastName= cursor.getString(3);
-                String employee_mobileNumber= cursor.getString(4);
-                String employee_email= cursor.getString(5);
-                String employee_salary= cursor.getString(6);
-                String employee_hiredate= cursor.getString(7);
-                String employee_department= cursor.getString(8);
-                String employee_role= cursor.getString(9);
-
-                EmployeesModel employeesModel = new EmployeesModel(employee_id,employee_work_id,employee_firstName,employee_lastName,employee_mobileNumber,employee_email,employee_salary,employee_hiredate,employee_department,employee_role);
-                returnlist.add(employeesModel);
-            }while (cursor.moveToNext());
-
+        cv.put(COLUMN_LEAVES_ID,leaveModel.getLeave_id());
+        cv.put(COLUMN_WorkLEAVES_ID,leaveModel.getWork_leave_id());
+        cv.put(COLUMN_LEAVES_NAME,leaveModel.getLeave_Name());
+        cv.put(COLUMN_LEAVES_START_DATE,leaveModel.getLeave_start_date());
+        cv.put(COLUMN_LEAVES_END_DATE,leaveModel.getLeave_end_date());
+        long insert = db.insert(LEAVES, null, cv);
+        if (insert == -1){
+            return false;
         }else{
-            // returns to no items in the list
+            return true;
         }
-        // relese db resorses
-        cursor.close();
-        db.close();
-        return returnlist;
     }
+
+
+    //////QUERIES
+    public Cursor readAllData_employee(){
+        String query = "SELECT * FROM " + USERS;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null){
+           cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+
+     }
+    public Cursor readAllData_employeeRoles(){
+        String query = "SELECT * FROM " + USERS;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null){
+            cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+
+    }
+
+    public Cursor readAllData_Department(){
+        String query = "SELECT * FROM " + DEPARTMENTS;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null){
+            cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+
+    }
+    public Cursor readAllData_Duty(){
+        String query = "SELECT * FROM " + DUTIES;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null){
+            cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+
+    }
+    public Cursor readAllData_Leave(){
+        String query = "SELECT * FROM " + LEAVES;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null){
+            cursor = db.rawQuery(query,null);
+        }
+        return cursor;
+
+    }
+
+
 }
