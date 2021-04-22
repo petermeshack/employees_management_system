@@ -16,16 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!--<Button
-            android:id="@+id/dept_view"
-            app:backgroundTint="@null"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.2"
-            android:text="@string/dept_view"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:background="@drawable/side_nav_bar"/>-->
+
 
         <Button
             android:id="@+id/dept_create"

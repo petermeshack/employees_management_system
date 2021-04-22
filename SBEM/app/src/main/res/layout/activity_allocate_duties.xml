@@ -17,7 +17,7 @@
         android:padding="20sp">
 
         <EditText
-            android:id="@+id/emp_id"
+            android:id="@+id/duty_id"
             android:layout_width="match_parent"
             android:textSize="20sp"
             android:layout_marginBottom="10sp"
@@ -61,6 +61,12 @@
             android:layout_width="match_parent"
             android:layout_height="50sp"
             android:text="@string/save_duty"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/reassign_duties"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="@string/reasign_duty"
             android:textSize="20sp" />
 
     </LinearLayout>

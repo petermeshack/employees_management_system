@@ -66,7 +66,7 @@ public class DepartmentModelAdapter extends RecyclerView.Adapter<DepartmentModel
             text_work_D_id= itemView.findViewById(R.id.txt_dep_id);
             text_Department_Name=itemView.findViewById(R.id.txt_dep_name);
             text_Department_creation_date=itemView.findViewById(R.id.txt_dep_lastname);
-            linearLayout_dep = itemView.findViewById(R.id.my_row_dep);
+            linearLayout_dep = itemView.findViewById(R.id.my_row_dep_department);
 
         }
     }

@@ -269,6 +269,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor;
 
     }
+
+    public void updateDataDuty(String id_row,String work_duty_id,String duty_Name,String duty_start_date,String duty_end_date){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(COLUMN_WorkDUTIES_ID, work_duty_id);
+        cv.put(COLUMN_DUTY_NAME, duty_Name);
+        cv.put(COLUMN_START_DATE, duty_start_date);
+        cv.put(COLUMN_END_DATE, duty_end_date);
+        long results = db.update(DUTIES,cv,COLUMN_DUTIES_ID+"=?", new String[]{id_row});
+        if(results == -1){
+            //
+        }else{
+            //
+
+        }
+    }
+
+
     public Cursor readAllData_Leave(){
         String query = "SELECT * FROM " + LEAVES;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -281,6 +299,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
+    public void updateDataLeave(String id_row,String work_leave_id,String leave_Name,String leave_start_date,String leave_end_date){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put(COLUMN_WorkLEAVES_ID, work_leave_id);
+        cv.put(COLUMN_LEAVES_NAME, leave_Name);
+        cv.put(COLUMN_LEAVES_START_DATE, leave_start_date);
+        cv.put(COLUMN_LEAVES_END_DATE, leave_end_date);
+        long results = db.update(LEAVES,cv,COLUMN_LEAVES_ID+"=?", new String[]{id_row});
+        if(results == -1){
+            //
+        }else{
+            //
+
+        }
+    }
+    public void deleteOberowLeave(String id_row){
+        SQLiteDatabase db = getWritableDatabase();
+        long results = db.delete(LEAVES, COLUMN_LEAVES_ID+"=?",new String[]{id_row});
+        if(results == -1){
+            //
+        }else{
+            //
+        }
+    }
 
 
 }

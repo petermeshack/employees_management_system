@@ -95,7 +95,7 @@ public class EmployeesModelAdapter extends RecyclerView.Adapter<EmployeesModelAd
             text_hiredate = itemView.findViewById(R.id.txt_emp_hiredate);
             text_department = itemView.findViewById(R.id.txt_emp_department);
             text_role = itemView.findViewById(R.id.txt_emp_role);
-            row_update_layout = itemView.findViewById(R.id.my_row);
+            row_update_layout = itemView.findViewById(R.id.my_row_row);
         }
     }
 }

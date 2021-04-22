@@ -96,4 +96,9 @@
     <string name="emp_role">Role</string>
     <string name="emp_update_info">UPDATE INFO</string>
     <string name="emp_terminate_info">TERMINATE</string>
+    <string name="leave_type_info">Leave Type</string>
+    <string name="leave_start_info">Leave Start</string>
+    <string name="leave_end">Leave End</string>
+    <string name="grant_leave_grant">GRANT LEAVE</string>
+    <string name="reasign_duty">REASIGN DUTY</string>
 </resources>
