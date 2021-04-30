@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".owner.ui.TerminateEmployeeActivity">
+    tools:context=".owner.ui.TerminateEmployeeActivity"
+    android:background="@drawable/room">
 
     <LinearLayout
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +24,10 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColorHint="@color/black"
             android:hint="@string/emp_id"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
             android:layout_margin="10sp"
             android:padding="10sp"
             android:textAlignment="center"/>
@@ -32,10 +36,13 @@
             android:id="@+id/fname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColorHint="@color/black"
             android:hint="@string/emp_fname"
             android:layout_margin="10sp"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:padding="10sp"/>
 
@@ -46,7 +53,10 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/emp_lname"
+            android:textColorHint="@color/black"
+            android:fontFamily="sans-serif-medium"
             android:layout_margin="10sp"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:padding="10sp"/>
 

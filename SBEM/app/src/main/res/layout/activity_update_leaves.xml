@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/update_leave_layout"
-    tools:context=".supervisor.ui.UpdateLeavesActivity">
+    tools:context=".supervisor.ui.UpdateLeavesActivity"
+    android:background="@drawable/room">
 
     <!--<LinearLayout
         android:layout_width="wrap_content"
@@ -71,7 +72,9 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textColorHint="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
                 android:padding="10sp"
                 android:inputType="number"
                 android:layout_margin="10sp"
@@ -83,6 +86,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
+                android:textColorHint="@color/black"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="20sp"
                 android:padding="10sp"
                 android:layout_margin="10sp"
@@ -97,6 +102,8 @@
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:padding="10sp"
+                android:textColorHint="@color/black"
+                android:fontFamily="sans-serif-medium"
                 android:layout_margin="10sp"
                 android:hint="@string/leave_start_info"
                 android:inputType="date" />
@@ -106,6 +113,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:textAlignment="center"
+                android:textColorHint="@color/black"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="20sp"
                 android:padding="10sp"
                 android:layout_margin="10sp"

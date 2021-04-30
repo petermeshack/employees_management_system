@@ -4,57 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/room"
     tools:context=".supervisor.ui.AllocateDutiesActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="20sp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/duty_id"
             android:layout_width="match_parent"
-            android:textSize="20sp"
-            android:layout_marginBottom="10sp"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:layout_marginBottom="10sp"
             android:hint="@string/emp_id"
-            android:textAlignment="center" />
+            android:fontFamily="sans-serif-medium"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/duty_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginBottom="10sp"
+            android:fontFamily="sans-serif-medium"
             android:hint="@string/duty_name"
             android:inputType="text"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/duty_startdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginBottom="10sp"
-            android:inputType="date"
             android:hint="@string/duty_startdate"
-            android:textAlignment="center" />
+            android:fontFamily="sans-serif-medium"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/duty_enddate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
             android:hint="@string/duty_enddate"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
             android:inputType="date"
             android:textAlignment="center"
-            android:layout_marginBottom="10sp"/>
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/save_duties"
@@ -62,6 +71,7 @@
             android:layout_height="50sp"
             android:text="@string/save_duty"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/reassign_duties"
             android:layout_width="match_parent"

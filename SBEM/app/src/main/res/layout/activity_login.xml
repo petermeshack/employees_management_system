@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -57,8 +58,8 @@
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        android:layout_marginBottom="50sp"
         android:visibility="visible"
-        android:layout_marginBottom="50sp"/>
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
