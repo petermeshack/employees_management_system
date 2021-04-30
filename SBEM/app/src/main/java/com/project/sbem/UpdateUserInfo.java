@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.FirebaseDatabase;
 import com.project.sbem.data.model.DatabaseHelper;
 import com.project.sbem.data.model.EmployeesModel;
 import com.project.sbem.owner.ui.NewEmployeeActivity;
@@ -24,6 +25,7 @@ public class UpdateUserInfo extends AppCompatActivity {
 
     String id,id_emp_up,first_name_up,last_name_up,phone_emp_up,email_emp_up,department_emp_up,role_emp_up, salary_emp_up, hiredate_emp_up;
     DatabaseHelper db = new DatabaseHelper(UpdateUserInfo.this);
+    EmployeesModel employeesModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -123,6 +125,7 @@ public class UpdateUserInfo extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 db.deleteOberowEmployee(id_emp_update.getText().toString());
+
             }
         });
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {

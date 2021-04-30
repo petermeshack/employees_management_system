@@ -13,7 +13,7 @@
         android:layout_margin="20sp"
         android:padding="20sp"
         android:text="Display user profile"
-        android:textSize="30sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 </FrameLayout>

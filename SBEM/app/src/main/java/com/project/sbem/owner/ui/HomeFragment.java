@@ -36,11 +36,11 @@ public class HomeFragment extends Fragment {
     DatabaseHelper db;
     ArrayList<String> work_id, firstname, lastname,mobilenumber,email,salary,hiredate,department,role;
     EmployeesModelAdapter employeesModelAdapter;
-
+    View root;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_owner_home, container, false);
+        root = inflater.inflate(R.layout.fragment_owner_home, container, false);
 
         list_all_users = root.findViewById(R.id.emp_employeelist_home);
         add_data = root.findViewById(R.id.add_info_home);
@@ -70,14 +70,19 @@ public class HomeFragment extends Fragment {
 
         return root;
     }
-/*
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1){
-            recreate(getActivity());
+            getFragmentManager()
+                    .beginTransaction()
+                    .detach(HomeFragment.this)
+                    .attach(HomeFragment.this)
+                    .addToBackStack(null)
+                    .commit();
         }
-    }*/
+    }
 
 
     void storedata_in_employye_array(){

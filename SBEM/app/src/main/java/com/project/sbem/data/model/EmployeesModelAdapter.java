@@ -22,7 +22,6 @@ public class EmployeesModelAdapter extends RecyclerView.Adapter<EmployeesModelAd
     Context context;
     Activity activity;
     ArrayList work_id, firstname, lastname,mobilenumber,email,salary,hiredate,department,role;
-   // public EmployeesModelAdapter(Activity activity,Context context, ArrayList work_id, ArrayList firstname, ArrayList lastname, ArrayList mobilenumber, ArrayList email, ArrayList salary, ArrayList hiredate, ArrayList department, ArrayList role) {
     public EmployeesModelAdapter(Context context, ArrayList work_id, ArrayList firstname, ArrayList lastname, ArrayList mobilenumber, ArrayList email, ArrayList salary, ArrayList hiredate, ArrayList department, ArrayList role) {
         //this.activity = activity;
         this.context = context;

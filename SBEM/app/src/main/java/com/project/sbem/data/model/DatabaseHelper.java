@@ -220,14 +220,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
     }
-    public void deleteOberowEmployee(String id_row){
+    public boolean  deleteOberowEmployee(String id_row){
         SQLiteDatabase db = getWritableDatabase();
-        long results = db.delete(USERS, COLUMN_ID+"=?",new String[]{id_row});
-        if(results == -1){
-            //
-        }else{
-            //
-        }
+        return db.delete(USERS, COLUMN_WORK_ID+"="+id_row,null)>0;
     }
 
 
@@ -314,14 +309,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         }
     }
-    public void deleteOberowLeave(String id_row){
+    public boolean deleteOberowLeave(String id_row){
         SQLiteDatabase db = getWritableDatabase();
-        long results = db.delete(LEAVES, COLUMN_LEAVES_ID+"=?",new String[]{id_row});
-        if(results == -1){
-            //
-        }else{
-            //
-        }
+        return db.delete(LEAVES, COLUMN_WorkLEAVES_ID+"="+id_row,null)>0;
+
     }
 
 

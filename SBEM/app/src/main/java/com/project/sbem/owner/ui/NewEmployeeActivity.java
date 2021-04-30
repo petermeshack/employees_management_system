@@ -2,7 +2,11 @@ package com.project.sbem.owner.ui;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +18,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.project.sbem.R;
 import com.project.sbem.data.model.DatabaseHelper;
 import com.project.sbem.data.model.EmployeesModel;
@@ -34,10 +40,14 @@ public class NewEmployeeActivity extends AppCompatActivity {
     Button btn_save_emp;
     //ListView listemployees_emp;
     //ListView all_data_list;
+    String id;
+    DatabaseReference databaseEmployees;
+    EmployeesModel employeesModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_employee);
+        databaseEmployees = FirebaseDatabase.getInstance().getReference("EMPLOYEES");
 
         // reference to the controls
          id_emp = findViewById(R.id.emp_id);
@@ -62,7 +72,7 @@ public class NewEmployeeActivity extends AppCompatActivity {
         btn_save_emp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EmployeesModel employeesModel;
+
                 try{
 
                     employeesModel = new EmployeesModel(
@@ -92,12 +102,32 @@ public class NewEmployeeActivity extends AppCompatActivity {
                     }else{
                     // instance of offline database
                     DatabaseHelper helper = new DatabaseHelper(NewEmployeeActivity.this);
-                    // helper.addOne(employeesModel);
+                        // helper.addOne(employeesModel);
                     boolean testsuccess = helper.addOneEmployee(employeesModel);
                     Toast.makeText(NewEmployeeActivity.this, "Sucess"+testsuccess, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(NewEmployeeActivity.this, "info Added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NewEmployeeActivity.this, "info ARCHIVED", Toast.LENGTH_SHORT).show();
+                        archiveEmployeesOnline();
+
+                        //give send notification
+                        /*String message = "Data has been archived";
+                        NotificationCompat.Builder builder = new NotificationCompat.Builder(
+                                NewEmployeeActivity.this
+                        ).setSmallIcon(R.drawable.ic_baseline_message_24)
+                                .setContentTitle("New Notification")
+                                .setContentText(message)
+                                .setAutoCancel(true);
                         Intent intent = new Intent(NewEmployeeActivity.this, HomeFragment.class);
-                        startActivity(intent);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        //intent.putExtra("message",message);
+
+                        PendingIntent pendingIntent = PendingIntent.getActivities(NewEmployeeActivity.this,0, new Intent[]{intent},PendingIntent.FLAG_UPDATE_CURRENT);
+                        builder.setContentIntent(pendingIntent);
+
+                        NotificationManager notificationManager = (NotificationManager)getSystemService(
+                                Context.NOTIFICATION_SERVICE
+                        );
+                        notificationManager.notify(0,builder.build());*/
+
                     }
 
                 }catch(Exception e){
@@ -115,6 +145,37 @@ public class NewEmployeeActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
+
+    private void archiveEmployeesOnline() {
+        //getting the values to save
+
+        //checking if the value is provided
+
+            //getting a unique id using push().getKey() method
+            //it will create a unique id and we will use it as the Primary Key for our Artist
+            String id = databaseEmployees.push().getKey();
+
+            //creating an Artist Object
+            employeesModel = new EmployeesModel(
+                -1,
+                id_emp.getText().toString(),
+                first_name.getText().toString(),
+                last_name.getText().toString(),
+                phone_emp.getText().toString(),
+                email_emp.getText().toString(),
+                salary_emp.getText().toString(),
+                hiredate_emp.getText().toString(),
+                department_emp.getText().toString(),
+                role_emp.getText().toString()
+        );
+
+            //Saving the Artist
+            databaseEmployees.child(id).setValue(employeesModel);
+
+
+
+
     }
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()) {
